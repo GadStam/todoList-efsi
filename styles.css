@@ -40,11 +40,9 @@ input {
     background-color: var(--diabled);
 }
 
-input:focus {
-    outline: none;
-}
 
-.addTaskButton,
+
+.agregarTareaButton,
 .orderButton {
     border: none;
     font-weight: bold;
@@ -68,7 +66,7 @@ input:focus {
     cursor: pointer;
 }
 
-.done {
+.hecho {
     background-color: var(--diabled);
     text-decoration: line-through;
     color: var(--dark);

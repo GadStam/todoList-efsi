@@ -4,14 +4,18 @@ const nuevaTarea = event => {
     if(!value) return;
     const task = document.createElement('div');
     task.classList.add('task', 'roundBorder');
-    task.addEventListener('click', changeTaskState)
+    task.addEventListener('click', cambiarEstadoTarea)
     task.textContent = value;
     tasksContainer.prepend(task);
     event.target.reset();
 };
 
-const changeTaskState = event => {
-    event.target.classList.toggle('done');
+const cambiarEstadoTarea = event => {
+    event.target.classList.toggle('hecho');
 };
 
 
+let refresh = document.getElementById('refresh');
+refresh.addEventListener('click', _ => {
+            location.reload();
+})
